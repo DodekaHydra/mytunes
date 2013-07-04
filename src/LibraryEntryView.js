@@ -12,7 +12,7 @@ var LibraryEntryView = Backbone.View.extend({
   // should be a spy here to queue clicked songs
 
   render: function(){
-    return this.$el.html(this.template(this.model.attributes));
+    return this.$el.html(this.template(this.model.attributes)+'<td>'+this.model.attributes.playcount+'</td>');
   }
 
 });

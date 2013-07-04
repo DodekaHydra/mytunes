@@ -1,5 +1,8 @@
 var Song = Backbone.Model.extend({
 
+  initialize: function(){
+    this.set('playcount', 0);
+  },
   play: function(){
     this.trigger('play', this);
   },
